@@ -10,8 +10,20 @@
 </head>
 
 <body>
+<div class="wrapper">
+  <h1>To-do</h1>
+  <form class="add-items">
+    <input id="toggle-all" class="" onclick="handlers.toggleCompleted()" type="button" value="">
+    <input class="new-todo" id="add" placeholder="What needs to be done?" autofocus>
+    <input type="submit" onclick="handlers.addTodos()" value="" class="btn" />
+  </form>
+   <div id='root'>
+     <ul class="added">
+     </ul>
+   </div>
+</div>
 
-  <div id='root'></div>
+  
 
   <!-- load the testing & reviewing dependencies -->
   <script src='../lib/gremlins.js'></script>

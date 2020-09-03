@@ -1,0 +1,116 @@
+body {
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background-image: url('https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    font-weight: 250;
+    overflow: hidden;
+}
+
+:focus {
+    outline: 0;
+}
+
+
+
+.wrapper{
+ background: rgba(15, 15, 15, 0.74);
+ margin: 130px 0px 40px 0;
+ padding-left: 10px;
+ color: white;
+ position: relative;
+padding : 70px;
+}
+
+
+
+ h1 {
+    position: absolute;
+    margin-right: 50rem;
+    top: -155px;
+    width: 50%;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+.new-todo{
+    position: relative;
+    margin: 0;
+    width: 450px;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    border: 0;
+    color: gray;
+    padding: 6px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.btn {
+    
+    position: relative;
+    background-image: url('https://image.flaticon.com/icons/svg/864/864378.svg');
+    background-repeat: no-repeat;
+    top:-40px;
+    padding:0.46em 1.6em;
+    right: -25rem;
+    outline: none;
+    border: none;
+    height: 23px;
+    border-radius: 25px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+
+
+#toggle-all {
+position: relative;
+ background: url(https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/arrow_down-512.png) center center / cover no-repeat;
+ background-color:white;
+ outline: none;
+ border: none;
+ height: 45px;
+ border-radius: none;
+ width: 55px;
+ color:black;
+ cursor: pointer;
+ transition: .5s;
+ top:8.8vh;
+ z-index: 1;
+right: 58px;
+ margin: 0.25rem;
+}
+
+.add-items{
+    padding:0;
+}
+
+
+.destroy {
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 30px;
+    color: white;
+    background: transparent;
+    font-size: 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0.6;
+}
