@@ -1,22 +1,17 @@
-'use strict';
-
-const toggleCompletedHandler = (event) => {
+var handlers = {
+    addTodos: function (e) {
 debugger;
-  // event delegation!
-  const target = event.target;
-  if (target.nodeName !== 'INPUT' || target.type !== 'checkbox') {
-    return;
+ e = e || window.event;
+ e.preventDefault();
+      var add = document.getElementById('add').value;
+      app.addTodo(add);
+      view.displayTodos();
+    
+    logger.push({
+      action: 'Add Todo',
+      state: app.state
+    })
+  },
+
   }
-
-  // update state using app method
-  const todoIndex = Number(target.id);
-  app.toggleCompleted(todoIndex);
-
-  logger.push({
-    action: 'toggle todo',
-    event,
-    todoIndex,
-    state: app.state
-  });
-
-};
+  

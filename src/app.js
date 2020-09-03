@@ -29,6 +29,12 @@ const app = {
   set state(newState) {
     this._state = newState
   },
+   addTodo(text) {
+       this._state.todos.push({
+         text: text,
+         completed: false
+       })
+      },
 
   toggleCompleted: function (position) {
     if (position < 0 || this._state.todos.length <= position) {
