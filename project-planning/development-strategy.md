@@ -10,7 +10,7 @@ project:  to do list
 
 ## WIREFRAME
 
-![wireframe](..\public\assets\wireframe.jpg)
+![wireframe](https://github.com/gelilaa/encapsulation-week1/blob/master/public/assets/wireframe.jpg?raw=true)
 
 ---
 
@@ -27,7 +27,7 @@ project:  to do list
 4. Prepare a project board
 ---
 
-## 1. HTML&CSS structure
+##  HTML&CSS structure
 
 **As a site visitor, I want to see the website layout and elements**
 
@@ -92,20 +92,7 @@ __The user can remove the submitted item after checking the item and refreshing 
 -	Require and apply the `script/..js` files
 ---
 
-## User Story: Display-listeners
-
-__The user can use the site to its full extent__
-
-### Listener:
-
-* Create a `submit` add button element listener 
-* Create a 'click' toggleDone input checkbox element listener
-
-
-### DOM 
--	Require and apply the `script/..js` files
-- Add shared variables and apply the file to the repo
-### 3.Show completed checkbox
+### Show completed checkbox
 
  __As a site visitor, when  click the checkbox, I want to see them as completed.__
 
@@ -124,6 +111,20 @@ This user story has been developed through a branch called 'storeInput'.
 ### javascript
 
 - cross out the text and check the button when clicked.
+
+## User Story: Display-listeners
+
+__The user can use the site to its full extent__
+
+### Listener:
+
+* Create a `submit` add button element listener 
+* Create a 'click' toggleDone input checkbox element listener
+
+
+### DOM 
+-	Require and apply the `script/..js` files
+- Add shared variables and apply the file to the repo
 
 ##  Documentation
 
