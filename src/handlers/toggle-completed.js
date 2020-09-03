@@ -11,7 +11,8 @@ debugger;
       action: 'Add Todo',
       state: app.state
     })
+  document.getElementById('add').value = '';
   },
-
+    
   }
   
