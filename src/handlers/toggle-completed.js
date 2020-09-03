@@ -1,7 +1,7 @@
 'use strict';
 
 const toggleCompletedHandler = (event) => {
-
+debugger;
   // event delegation!
   const target = event.target;
   if (target.nodeName !== 'INPUT' || target.type !== 'checkbox') {
