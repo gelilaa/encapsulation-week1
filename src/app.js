@@ -36,11 +36,19 @@ const app = {
        })
       },
 
-  toggleCompleted: function (position) {
-    if (position < 0 || this._state.todos.length <= position) {
-      return;
-    }
-    const todo = this._state.todos[position];
-    todo.completed = !todo.completed;
-  }
+  /*changeTodo(position, todoText) {
+      this._state.todos[position].todoText = todoText;
+
+    },*/
+    deleteTodo(position) {
+      this._state.todos.splice(position, 1);
+    },
+
+    toggleCompleted: function (position) {
+      if (position < 0 || this._state.todos.length <= position) {
+        return;
+      }
+      const todo = this._state.todos[position];
+      todo.completed = !todo.completed;
+    },
 }
