@@ -123,3 +123,8 @@ li{
     sans-serif;
     border-bottom: 1px solid #ccc;
 }
+.checkbox {
+    color: black;
+    text-decoration: line-through;
+    background-color: white;
+}

@@ -51,4 +51,24 @@ const app = {
       const todo = this._state.todos[position];
       todo.completed = !todo.completed;
     },
+  toggleAll() {
+    var totalTodos = this.state.todos.length;
+    var completedTodos = 0;
+    this.state.todos.forEach(function (todo) {
+      if (todo.completed === true) {
+        completedTodos++;
+      }
+    });
+    if (completedTodos === totalTodos) {
+      this.state.todos.forEach(function (todo) {
+        todo.completed = false;
+      });
+
+    } else {
+      this.state.todos.forEach(function (todo) {
+        todo.completed = true;
+      })
+    };
+
+  }
 }
