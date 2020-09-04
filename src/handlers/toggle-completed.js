@@ -29,6 +29,11 @@ var handlers = {
     debugger;
     app.deleteTodo(position);
     view.displayTodos();
+
+    logger.push({
+      action: "Delete Todo ",
+      state: app.state,
+    });
   },
   toggleCompleted: function () {
     debugger;
@@ -40,6 +45,10 @@ var handlers = {
         app.toggleCompleted(Number(input));
         child.className = "checkbox";
       }
+      if (child.childNodes[0].checked === false) {
+        child.className = "";
+        child.setAttribute("checked", false);
+      }
     });
     logger.push({
       action: "toggle completed",
@@ -49,6 +58,12 @@ var handlers = {
   toggleAll: function () {
     app.toggleAll();
     view.displayTodos();
+
+    logger.push({
+      action: "toggle All",
+      state: app.state,
+    });
   },
+  
 };
   

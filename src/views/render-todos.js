@@ -10,7 +10,7 @@ var view = {
      // todoLi.style.listStyleType = 'none';
 
       todoLi.id = position;
-      todoLi.innerHTML = "<input class= 'checkbox' type = 'radio' onclick = 'handlers.toggleCompleted()'>" + todo.text + "</input>";
+      todoLi.innerHTML = "<input class= 'checkbox' type = 'checkbox' onclick = 'handlers.toggleCompleted()'>" + todo.text + "</input>";
 
       todoLi.appendChild(this.createDeleteButton());
 
